@@ -1,12 +1,14 @@
 package com.geometricshapes;
 
-public class Square implements Polygon {
+public class Square extends Shape implements Polygon {
     private double x;
 
     public Square() {
+        super("Square");
     }
 
     public Square(double x) {
+        super("Square");
         this.x = x;
     }
 

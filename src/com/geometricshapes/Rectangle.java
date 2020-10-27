@@ -1,13 +1,16 @@
 package com.geometricshapes;
 
-public class Rectangle implements Polygon {
+public class Rectangle extends Shape implements Polygon {
     double a, b;
 
     public Rectangle() {
+        super("Rectangle");
     }
 
-    public Rectangle(double a) {
+    public Rectangle(double a, double b) {
+        super("Rectangle");
         this.a = a;
+        this.b = b;
     }
 
     @Override

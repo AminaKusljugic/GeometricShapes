@@ -1,10 +1,16 @@
 package com.geometricshapes;
 
-class Circle implements Sphere {
+class Circle extends Shape implements Sphere {
+
     private final double PI = 3.14;
     private double r;
 
+    public Circle() {
+        super("Circle");
+    }
+
     public Circle(double r) {
+        super("Circle");
         this.r = r;
     }
 
